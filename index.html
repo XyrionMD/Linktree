@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XyrionMD Linktree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            padding: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255,0,255,0.2);
+        }
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            padding: 10px;
+            background: #800080;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            gap: 10px;
+        }
+        .link:hover {
+            background: #a020f0;
+        }
+        .link img {
+            width: 20px;
+            height: 20px;
+        }
+        img.profile {
+            width:100px; 
+            height:100px; 
+            border-radius:50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="uzi.png" alt="profile" class="profile">
+        <h1>XyrionMD 🥴</h1>
+        <p>Welcome To Linktree XyrionMD 😁🗿</p>
+
+        <a href="https://youtube.com/@arfzz-u2w?si=nCy4c4pjZ--2YbEp" class="link" target="_blank">
+            <img src="/Assets/ylogo.png" alt="YT"> 》Youtube《
+        </a>
+
+        <a href="https://vm.tiktok.com/ZS9JC6eVrwtHA-hLEh5/" class="link" target="_blank">
+            <img src="/Assets/tlogo.png" alt="TT"> 》TikTok《
+        </a>
+
+        <a href="https://chat.whatsapp.com/IThuVsPiT9jDI61HouYtLd" class="link" target="_blank">
+            <img src="/Assets/wlogo.png" alt="WA"> 》Group WA《
+        </a>
+
+        <a href="#" class="link" id="waBtn">
+            <img src="/Assets/wlogo.png" alt="WA"> 》📤 Orders via WA《
+        </a>
+    </div>
+
+    <script>
+        let encoded = "NjI4MzEyMTM4MjI3MA==";
+        document.getElementById("waBtn").onclick = function() {
+            let number = atob(encoded);
+            let text = encodeURIComponent("Halo bang mau order web dong");
+            window.open("https://wa.me/" + number + "?text=" + text, "_blank");
+        };
+    </script>
+</body>
+</html>
